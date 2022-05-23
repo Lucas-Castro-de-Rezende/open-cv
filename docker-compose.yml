@@ -1,0 +1,10 @@
+version: "3"
+services:
+  open-cv:
+    container_name: 'open-cv'
+    command: bash -c "jupyter lab --notebook-dir=/home/open-cv --ip='0.0.0.0' --port=8888 --no-browser --allow-root"
+    build: .
+    ports:
+      - '8888:8888'
+    volumes:
+      - ./:/home/open-cv
