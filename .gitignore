@@ -133,3 +133,6 @@ exercises/assets/
 
 # open-cv classes
 opencv/
+
+# faces
+miniproject/faces/
